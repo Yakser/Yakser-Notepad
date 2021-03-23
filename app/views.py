@@ -35,7 +35,8 @@ def folders(folder_id):
         empty = "В этой папке нет ни одной заметки..."
 
     return render_template('folders.html', folders=acc_folders, notes=notes,
-                           current_folder=Folder.query.filter(Folder.id == folder_id).first(), empty=empty,
+                           current_folder=Folder.query.filter(Folder.id == folder_id).first(),
+                           empty=empty,
                            user=current_user, query=query)
 
 
