@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% block block %}
+    <div class="block">
+                <div class="block-header">
+                    <div class="path-hint">
+                        <a href="/">Главная</a><img src="../static/img/right-arrow.svg" alt="" class="header-arrow">
+                    </div>
+                    <h1>Регистрация</h1>
+                    <div class="block-menu">
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            <ul class=flashes>
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                        <form class="login-form" method="post">
+                            <input type="text" name="login" id="login"
+                                   placeholder="Логин" required>
+                            <input type="email" name="email" id="email"
+                                   placeholder="Электронная почта" required>
+                            <input type="text" name="name" id="name"
+                                   placeholder="Имя">
+                            <input type="text" name="surname" id="surname"
+                                   placeholder="Фамилия">
+                            <input type="password" name="password" id="password" placeholder="Пароль" required>
+                            <input type="password" name="password2" id="password2" placeholder="Повторите пароль" required>
+                            <button type="submit">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+{% endblock %}

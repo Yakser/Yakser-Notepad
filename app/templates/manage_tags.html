@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% block block %}
+    <div class="block">
+        <div class="block-header">
+            <div class="path-hint">
+                <a href="/">Главная</a><img src="../static/img/right-arrow.svg" alt="" class="header-arrow">
+            </div>
+            <h1>Управление</h1>
+            <div class="block-menu">
+                <div class="manage-blocks">
+                    <a class="manage-block manage-folders" href="{{ url_for('manage_folders') }}">
+                        <img src="../static/img/light-folder.svg" alt="">
+                        <span>Управление папками</span>
+                    </a>
+                    <a class="manage-block manage-tags" href="{{ url_for('manage_tags') }}">
+                        <img src="../static/img/tag.svg" alt="">
+                        <span>Управление тегами</span>
+                    </a>
+                </div>
+                <span class="cur-manage-mode cur-subheader">Управление папками</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="manage">
+                <form method="POST" class="search-form">
+                    <input type="text" id="search-folder" name="search-folder" placeholder="Поиск">
+                </form>
+                <a href="/create_folder" class="add-btn"><img src="../static/img/add.svg" alt=""></a>
+            </div>
+            <div class="folders">
+                {% for folder in folders %}
+                    <div class="folder ">
+                        <span class="date">{{ momentjs(folder.date).calendar() }}</span>
+                        <a href="/{{ folder.id }}" class="folder-ref">
+                            <img src="../static/img/gray-folder.svg" alt="" class="folder-ico">
+                            <span class="folder-name">{{ folder.name.capitalize() }}</span>
+                        </a>
+                        <div class="sub-btns">
+                            <a href="/del/{{ folder.id }}/-1" class="del-btn del-folder-btn sub-btn"><img
+                                    src="../static/img/del.svg" alt=""></a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+{% endblock %}

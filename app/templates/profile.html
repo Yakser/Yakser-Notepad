@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+{% block block %}
+    <div class="block">
+        <div class="block-header">
+            <div class="path-hint">
+                <a href="/">Главная</a><img src="../static/img/right-arrow.svg" alt="" class="header-arrow">
+            </div>
+            <h1>Профиль</h1>
+            <div class="block-menu">
+                <div class="profile-block">
+                    <img src="../static/img/user.svg" alt="" class="avatar">
+                    <div class="info">
+                        <div class="edit-block">
+                            <span class="nickname">{{ user.login }}</span>
+                            <a href="{{ url_for('edit_profile') }}" class="edit-profile">
+                                <img src="../static/img/pencil.svg" alt="">
+                                <span>Редактировать</span>
+                            </a>
+                        </div>
+                        {% if user.name and user.surname %}
+                            <span class="username">{{ user.name }} {{ user.surname }}</span>
+                        {% endif %}
+
+                        {% if user.email %}
+                            <span class="email">{{ user.email }}</span>
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="about-me">
+                <h2>Обо мне</h2>
+                <div class="info-lst">
+                    {% for item in info_lst %}
+                        <div class="info-item">
+                            <span>{{ item }}</span>
+                            {% if info_lst[item] %}
+                                <span>{{ info_lst[item] }}</span>
+                            {% else %}
+                                <span>&mdash;</span>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

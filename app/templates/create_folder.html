@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block block %}
+    <div class="block">
+                <div class="block-header">
+                    <div class="path-hint">
+                        <a href="/">Главная</a><img src="../static/img/right-arrow.svg" alt="" class="header-arrow">
+                    </div>
+                    <h1>Создание папки</h1>
+                    <div class="block-menu">
+                        <form class="add-form" method="post">
+                            <input type="text" name="folder-name" id="folder-name"
+                                   placeholder="Имя папки" autocomplete="off">
+                            <button type="submit">Создать</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+{% endblock %}

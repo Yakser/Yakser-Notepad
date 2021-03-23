@@ -1,0 +1,64 @@
+{% extends 'main.html' %}
+{% block block %}
+    <div class="block">
+        <div class="block-header">
+            <div class="path-hint">
+                <a href="/">Главная</a><img src="../static/img/right-arrow.svg" alt="" class="header-arrow">
+            </div>
+            <h1>Редактирование записи</h1>
+            {% set edu = '' %}
+            {% set imp = '' %}
+            {% set work = '' %}
+            {% set thgts = '' %}
+            {% if note.tags and 'учеба' in note.tags.split() %}
+                {% set edu = 'checked' %}
+            {% endif %}
+            {% if note.tags and 'важное' in note.tags.split() %}
+                {% set imp = 'checked' %}
+            {% endif %}
+            {% if note.tags and 'работа' in note.tags.split() %}
+                {% set work = 'checked' %}
+            {% endif %}
+            {% if note.tags and 'мысли' in note.tags.split() %}
+                {% set thgts = 'checked' %}
+            {% endif %}
+            {% if note.tags and 'развлечения' in note.tags.split() %}
+                {% set fun = 'checked' %}
+            {% endif %}
+
+            <div class="block-menu">
+                <form class="add-form" method="post">
+                    <input type="text" name="note-name" id="note-name"
+                           placeholder="Название заметки" autocomplete="off" value="{{ note.header.capitalize() }}">
+                    <textarea name="note-text" id="note-text"
+                              cols="30" rows="10" placeholder="Текст заметки">{{ note.text }}</textarea>
+                    <div class="form-block">
+                        <span>Теги</span>
+                        <label class="form-check-label">
+                            <input type="checkbox" class="tag-input" id="important"
+                                   name="important" {{ imp }}>Важное
+                        </label>
+                        <label class="form-check-label">
+                            <input type="checkbox" class="tag-input" id="education"
+                                   name="education" {{ edu }}>Учеба
+                        </label>
+                        <label class="form-check-label">
+                            <input type="checkbox" class="tag-input" id="work"
+                                   name="work" {{ work }}>Работа
+                        </label>
+                        <label class="form-check-label">
+                            <input type="checkbox" class="tag-input" id="fun"
+                                   name="fun" {{ fun }}>Развлечения
+                        </label>
+                        <label class="form-check-label">
+                            <input type="checkbox" class="tag-input" id="thoughts"
+                                   name="thoughts" {{ thgts }}>Мысли
+                        </label>
+                    </div>
+                    <button type="submit">Изменить</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
