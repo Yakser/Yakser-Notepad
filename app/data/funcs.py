@@ -1,17 +1,26 @@
 from flask_login import current_user
 
-from app import db
-from app.models import AppData, Folder, Note, current_date
+from app.data import db_session
+from user import User
+from note import Note
+from folder import Folder
+
 
 def update_last_change_date():
-    AppData.query.first().last_change_date = current_date()
-    db.session.commit()
+    print("Last change date updated!")
+    # session = db_session.create_session()
+    # AppData.query.first().last_change_date = current_date()
+    # session.commit()
+
+
 def get_accessible_folders():
     try:
         acc_folders = Folder.query.filter(Folder.acc_users.contains(current_user.id)).all()
         return acc_folders
     except AttributeError:
         return []
+
+
 def get_folder_id(name, query_by_note_id=False):
     if not query_by_note_id:
         founded_folder = Folder.query.filter(Folder.name == name.lower()).first()
@@ -21,6 +30,8 @@ def get_folder_id(name, query_by_note_id=False):
         founded_note = Note.query.filter(Note.id == name).first()
         if founded_note:
             return founded_note.folder_id
+
+
 def get_folder_name(folder_id):
     founded_folder = Folder.query.filter(Folder.id == folder_id).first()
     if founded_folder:
