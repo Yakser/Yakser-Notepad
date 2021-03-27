@@ -1,71 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/email_engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/folders_argparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/folders_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/notes_argparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/datetime_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/update_last_change_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/folder_test_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/note_test_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/__all_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/db_session.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/folder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/funcs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/momentjs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/note.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/note_resource.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db/notepad.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/about.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/add.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/bg-100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/del.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/folder-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/folder.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/gray-folder.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/home.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/hor-dots-hover.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/hor-dots.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/light-folder.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/manage_folders.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/note.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/pencil.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/reset_search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/right-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/selected.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/settings.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/tag-primary.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/tag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/moment-with-locales.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/add_note.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/create_folder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/edit_note.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/edit_profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/folders.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/manage_folders.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/manage_tags.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/settings.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-    </list>
+    <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -266,7 +202,7 @@
       <workItem from="1616695420736" duration="4905000" />
       <workItem from="1616735621221" duration="755000" />
       <workItem from="1616786671819" duration="5256000" />
-      <workItem from="1616825878344" duration="2666000" />
+      <workItem from="1616825878344" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1616528174532</created>
@@ -289,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616570854294</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Отправка письма с паролем и логином после регистрации">
+      <created>1616828838283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616828838284</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +245,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2" />
+    <MESSAGE value="Отправка письма с паролем и логином после регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отправка письма с паролем и логином после регистрации" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Notepaddy$user_test_api.coverage" NAME="user_test_api Coverage Results" MODIFIED="1616570386428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+{% block block %}
+    <div class="block">
+        <div class="block-header">
+            <div class="path-hint">
+                <a href="/">Главная</a><img src="../static/img/right-arrow.svg" alt="" class="header-arrow">
+            </div>
+
+            <h1>Настройки</h1>
+            <div class="block-menu">
+                <div class="stats">
+                    <div class="stat-block">
+                        <div class="up">
+                            <img src="../static/img/note.svg" alt="">
+                            <span class="cnt-num">{{ notes_cnt }}</span>
+                        </div>
+                        {# stats value#}
+                        <span class="cnt-text">Всего записей</span>
+                    </div>
+                    <div class="stat-block">
+                        <div class="up">
+                            <img src="../static/img/folder-red.svg" alt="">
+                            <span class="cnt-num">{{ folders_cnt }}</span>
+                        </div>
+                        {# stats value#}
+                        <span class="cnt-text">Всего папок</span>
+                    </div>
+
+
+                </div>
+                <div class="last_change">Последние изменения
+                    <span>{{ momentjs(user.modified_date).calendar() }}</span>
+                    {#                            <time datetime="2021-02-28T15:36:00+03:00"></time>#}
+                    {#                            <script>#}
+                    {#                              var time = document.getElementsByTagName("time")[0];#}
+                    {#                              console.log(time.dateTime);#}
+                    {#                              // outputs "2001-05-15 19:00"#}
+                    {#                            </script>#}
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

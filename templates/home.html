@@ -1,0 +1,36 @@
+
+{% extends 'main.html' %}
+{% block block %}
+    <div class="block">
+        <div class="block-header">
+            {% if not user.login %}
+                <h1>Добро пожаловать в <span>Notepad</span>!</h1>
+            {% else %}
+                <h1>Добро пожаловать, <span>
+                            {% if user.name %}
+                                {{ user.name }}{% else %}
+                                {{ user.login }}{% endif %}</span>.</h1>
+            {% endif %}
+            <div class="block-menu">
+                {% if user.login %}
+                    <ul class="folders">
+                        {% for folder in folders %}
+                            <li>
+                                <a href="/{{ folder.id }}">
+                                    <img src="../static/img/folder.svg" alt="">
+                                    <span>{{ folder.name.capitalize() }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+        <div class="content">
+            <p class="about-text about-text-dark">
+                <span>Notepad</span> - создавайте заметки, записывайте мысли, сохраняйте ссылки!
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
