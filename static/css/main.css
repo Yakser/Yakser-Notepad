@@ -1180,3 +1180,18 @@ form textarea::placeholder {
     }
 }
 
+.del-acc-btn {
+    display: inline-block;
+    background: rgb(238,88,88);
+    background: linear-gradient(-40deg, rgba(238,88,88,1) 0%, rgba(241,106,105,1) 35%, rgba(246,134,133,1) 100%);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 30px;
+    color: #fff;
+    opacity: .5;
+    transition: .2s ease-in opacity;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+.del-acc-btn:hover{
+    opacity: 1;
+}

@@ -8,12 +8,12 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 from data import db_session
 from data import folders_resource, notes_resource
-from data.email_engine import send_login_and_password
+from data import users_resource
+from data.email_engine import send_login_and_password, send_account_deleted, send_password_changed
 from data.folder import Folder
+from data.momentjs import momentjs
 from data.note import Note
 from data.user import User
-from data.momentjs import momentjs
-from data import users_resource
 from functions.update_last_change_date import update_last_change_date
 
 app = Flask(__name__)
@@ -250,6 +250,37 @@ def edit_profile():
     current_user.email = request.form.get('email')
     session.commit()
     return redirect('/profile')
+
+
+@app.route('/delete_profile')
+@login_required
+def delete_profile():
+    session = db_session.create_session()
+    user = session.query(User).get(current_user.id)
+    session.delete(user)
+
+    send_account_deleted(user.email, user.login)
+    session.commit()
+    return redirect('/')
+
+
+@app.route('/change_password', methods=['POST', 'GET'])
+@login_required
+def change_password():
+    if request.method == 'GET':
+        return render_template('change_password.html', user=current_user)
+    session = db_session.create_session()
+    user = session.query(User).get(current_user.id)
+
+    if check_password_hash(user.password, request.form.get('password')):
+        send_password_changed(user.email, user.login, request.form.get('new-password'))
+        user.password = generate_password_hash(request.form.get('new-password'))
+        session.commit()
+        return redirect('/')
+    else:
+        flash('Неверный пароль!')
+
+    return render_template('change_password.html', user=current_user)
 
 
 @app.route('/about')
