@@ -19,7 +19,6 @@ Jinja2==2.11.3
 Mako==1.1.4
 MarkupSafe==1.1.1
 marshmallow==3.10.0
-Mathf==1.0.2
 mutagen==1.45.1
 numpy==1.19.4
 pefile==2019.4.18
