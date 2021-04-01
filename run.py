@@ -306,6 +306,7 @@ def main():
     api.add_resource(folders_resource.FolderResource, '/api/folders/<int:folder_id>')
     api.add_resource(folders_resource.FoldersListResource, '/api/folders')
 
+    # only for dev
     api.add_resource(notes_resource.NotesListResource, '/api/notes')
     api.add_resource(notes_resource.NoteResource, '/api/notes/<int:note_id>')
     app.run()
