@@ -300,6 +300,7 @@ def unauthorized(error):
 
 def main():
     db_session.global_init("db/notepad.db")
+    # db_session.global_init("C:\\Python1\\Python37\\Projects\\Notepaddy\\db\\notepad.db")
     api.add_resource(users_resource.UsersListResource, '/api/users')
     api.add_resource(users_resource.UserResource, '/api/users/<int:user_id>')
 
@@ -312,5 +313,6 @@ def main():
     app.run()
 
 
-if __name__ == '__main__':
-    main()
+# __name__ = run
+# if __name__ == '__main__':
+main()
