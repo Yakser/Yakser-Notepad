@@ -282,12 +282,17 @@ def change_password():
         return render_template('change_password.html', user=current_user)
     session = db_session.create_session()
     user = session.query(User).get(current_user.id)
-
+    new_password = request.form.get('new-password', "").strip()
     if check_password_hash(user.password, request.form.get('password')):
-        send_password_changed(user.email, user.login, request.form.get('new-password'))
-        user.password = generate_password_hash(request.form.get('new-password'))
-        session.commit()
-        return redirect('/')
+        if len(new_password) >= 3:
+            print('before')
+            send_password_changed(user.email, user.login, new_password)
+            print('after')
+            user.password = generate_password_hash(new_password)
+            session.commit()
+            return redirect('/')
+        else:
+            flash('Пароль слишком слабый!')
     else:
         flash('Неверный пароль!')
 

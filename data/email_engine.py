@@ -42,8 +42,14 @@ def send_login_and_password(receiver_email, login, password):
         
     """
     html = f"""
-    <html>
-      <body>
+    <html lang="ru">
+    <head>
+        <title>Добро пожаловать в приложение Notepad!</title>
+        <style>
+            {styles}
+        </style>
+    </head>
+    <body>
         <h1>
             Добро пожаловать в приложение Notepad!
         </h1>
@@ -59,9 +65,6 @@ def send_login_and_password(receiver_email, login, password):
             <a href="https://yakser-notepad.herokuapp.com/login">Войти</a>
         </div>
       </body>
-      <style>
-        {styles}
-      </style>
     </html>
     """
 
@@ -119,10 +122,17 @@ def send_account_deleted(receiver_email, login):
 
     """
     html = f"""
-    <html>
+    <!DOCTYPE html>
+    <html lang="ru">
+        <head>
+            <title>Аккаунт {login} приложения Notepad удален!</title>
+            <style>
+                {styles}
+            </style>
+        </head>
       <body>
         <h1>
-            Аккаунт приложения Notepad удален
+            Аккаунт {login} приложения Notepad удален!
         </h1>
         <div class="content">
             <p>
@@ -134,9 +144,6 @@ def send_account_deleted(receiver_email, login):
             <a href="https://yakser-notepad.herokuapp.com/register">Создать новый аккаунт</a>
         </div>
       </body>
-      <style>
-        {styles}
-      </style>
     </html>
     """
 
@@ -194,7 +201,14 @@ def send_password_changed(receiver_email, login, new_password):
 
         """
     html = f"""
-        <html>
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+            <title>Пароль от аккаунта {login} был изменен</title>
+            <style>
+                {styles}
+            </style>
+        </head>
           <body>
             <h1>
                 Пароль от аккаунта {login} был изменен
@@ -209,9 +223,6 @@ def send_password_changed(receiver_email, login, new_password):
                 <a href="https://yakser-notepad.herokuapp.com/">Notepad</a>
             </div>
           </body>
-          <style>
-            {styles}
-          </style>
         </html>
         """
 
@@ -223,6 +234,7 @@ def send_password_changed(receiver_email, login, new_password):
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
         server.login(app_email, app_password)
         server.sendmail(app_email, receiver_email, message.as_string())
+        print('sending')
 # send_login_and_password('sergeyyaksanov@yandex.ru', 'login', 'password')
 # # email_engine
 # # # Created by Sergey Yaksanov at 27.03.2021
