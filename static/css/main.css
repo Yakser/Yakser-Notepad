@@ -303,7 +303,7 @@ header {
     color: #fff;
     mix-blend-mode: overlay;
     transition: .2s ease-in;
-    animation-name: fade-in-left;
+    /*animation-name: fade-in-left;*/
     animation-iteration-count: 1;
     animation-duration: .3s;
     animation-timing-function: ease-in-out;
@@ -330,7 +330,7 @@ header {
     display: inline-block;
     color: #fff;
     margin: 30px 30px 30px 75px;
-    animation-name: fade-in-left;
+    animation-name: fade-in-right;
     animation-iteration-count: 1;
     animation-duration: .4s;
     animation-timing-function: ease-in-out;
@@ -410,7 +410,7 @@ header {
 }
 
 .folders li a:hover img {
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .6));
+    /*filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .6));*/
     transform: scale(1.05);
 }
 
@@ -607,6 +607,14 @@ header {
     padding: 15px;
     margin: 15px;
     background: #fff;
+
+    opacity: 0;
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-delay: .2s;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .note h2 {
@@ -807,12 +815,13 @@ header {
     background: linear-gradient(0deg, rgba(222, 173, 79, 1) 0%, rgba(239, 218, 153, 1) 85%);
     transition: .3s ease-in transform;
 
+    opacity: 0;
     animation-name: fade-in;
     animation-iteration-count: 1;
     animation-delay: .1s;
     animation-duration: .6s;
     animation-timing-function: ease-in-out;
-
+    animation-fill-mode: forwards;
 }
 
 .manage-block:hover {
@@ -1367,6 +1376,7 @@ form textarea::placeholder {
 
 @keyframes gradient {
     0% {
+
         background-position: 0% 50%;
     }
     50% {

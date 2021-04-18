@@ -84,6 +84,9 @@ def add_note(folder_id):
 
     header, text = request.form.get('note-name').lower(), request.form.get('note-text')
 
+    if not header:
+        header = 'Заметка'
+
     tags_d = {'important': 'важное', 'education': 'учеба',
               'work': 'работа', 'fun': 'развлечения', 'thoughts': 'мысли'}
     tags = ' '.join([tags_d[i] for i in tags_d.keys() if request.form.get(i)])
