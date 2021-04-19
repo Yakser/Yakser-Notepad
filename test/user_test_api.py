@@ -1,5 +1,8 @@
 from requests import get, delete
 
+
+
+
 print(get('http://localhost:5000/api/users').json())
 
 # user_test_api

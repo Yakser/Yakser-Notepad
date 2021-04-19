@@ -52,6 +52,7 @@ def home():
 
 
 @app.route('/<folder_id>', methods=['POST', 'GET'])
+@app.route('/folders/<folder_id>', methods=['POST', 'GET'])
 @login_required
 def folders(folder_id):
     if not folder_id.isdigit():

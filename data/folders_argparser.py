@@ -2,7 +2,7 @@ from flask_restful import reqparse
 
 parser = reqparse.RequestParser()
 parser.add_argument('name', required=True)
-parser.add_argument('acc_users', required=True)
+parser.add_argument('user_id', required=True)
 
 
 # folders_argparser
