@@ -49,7 +49,7 @@ def test_get_folders():
 #                  .json()) == {'success': 'OK'}
 
 
-def test_delete_not_exists_folder():
+def test_delete_nonexistent_folder():
     """
     corr: {'message': 'Folder 999 not found'}
     """
@@ -74,9 +74,8 @@ def test_add_folder_empty():
 
     """
     resp = post(f'{URL}/folders').json()
-    assert resp['message'] == {'name':
-                                   'Missing required parameter in'
-                                   ' the JSON body or the post body or the query string'}
+    assert resp['message'] == {'name': 'Missing required parameter in'
+                                       ' the JSON body or the post body or the query string'}
 
 #
 # test_folder_api
