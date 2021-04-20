@@ -14,7 +14,6 @@ class Note(SqlAlchemyBase, SerializerMixin):
     header = sqlalchemy.Column(sqlalchemy.String, nullable=False)
     text = sqlalchemy.Column(sqlalchemy.Text, nullable=True)
     date = sqlalchemy.Column(sqlalchemy.String, nullable=True, default=current_date)
-    favorite = sqlalchemy.Column(sqlalchemy.Boolean, nullable=True)
     folder_id = sqlalchemy.Column(sqlalchemy.Integer,
                                   sqlalchemy.ForeignKey("folder.id"))
     folder = orm.relation('Folder')

@@ -2,7 +2,7 @@ from flask import jsonify
 from flask_restful import Resource, abort
 from data import db_session
 from data.note import Note
-from data.notes_argparser import parser
+from data.notes_argparser import parser, edit_parser
 
 
 class NoteResource(Resource):
@@ -11,7 +11,21 @@ class NoteResource(Resource):
         session = db_session.create_session()
         note = session.query(Note).get(note_id)
         return jsonify({'note': note.to_dict(
-            only=())})
+            only=('id', 'header', 'text', 'folder_id', 'tags'))})
+
+    def put(self, note_id):
+        abort_if_note_not_found(note_id)
+        try:
+            args = edit_parser.parse_args()
+            session = db_session.create_session()
+            note = session.query(Note).get(note_id)
+            note.header = args.get('header', note.header)
+            note.text = args.get('text', note.text)
+            note.tags = args.get('tags', note.tags)
+            session.commit()
+        except Exception:
+            return jsonify({'error': 'incorrect data'})
+        return jsonify({'success': 'OK'})
 
     def delete(self, note_id):
         abort_if_note_not_found(note_id)
@@ -27,7 +41,7 @@ class NotesListResource(Resource):
         session = db_session.create_session()
         notes = session.query(Note).all()
         return jsonify({'notes': [item.to_dict(
-            only=()) for item
+            only=('id', 'header', 'text', 'folder_id', 'tags')) for item
             in notes]})
 
     def post(self):
