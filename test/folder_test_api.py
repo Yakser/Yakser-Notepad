@@ -1,6 +1,6 @@
 from requests import get, delete, post
 
-URL = 'http://localhost:5000/api/'
+URL = 'http://localhost:5000/api'
 
 
 def test_get_one_folder_correct():
@@ -36,17 +36,10 @@ def test_get_folders():
                  .json().keys())[0] == 'folders'
 
 
-# def test_delete_exists_folder():
-#     """
-#     corr: {'success': 'OK'}
-#     """
-#     random_name = 'jahdjkasd'
-#     post(f'{URL}/api/folders', json={'name': random_name, 'user_id': '999'})
-#     session = db_session.create_session()
-#     id_ = session.query(Folder).filter(Folder.name == random_name).first().id
-#     session.close()
-#     assert tuple(delete(f'{URL}/api/folders/{id_}')
-#                  .json()) == {'success': 'OK'}
+def test_delete_folder():
+    id_ = post(f'{URL}/folders', json={'name': "TestFolderName", 'user_id': '0'}).json()['folder_id']
+
+    assert delete(f'{URL}/folders/{id_}').json()['success'] == 'OK'
 
 
 def test_delete_nonexistent_folder():

@@ -19,7 +19,7 @@ class FolderResource(Resource):
         folder = session.query(Folder).get(folder_id)
         session.delete(folder)
         session.commit()
-        return jsonify({'success': 'OK'})
+        return jsonify({'success': 'OK', 'folder_id': folder.id})
 
 
 class FoldersListResource(Resource):
