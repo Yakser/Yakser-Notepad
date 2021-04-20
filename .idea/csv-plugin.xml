@@ -45,6 +45,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\test\note_test_api.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\test\user_test_api.py">
           <value>
             <Attribute>
