@@ -1,5 +1,3 @@
-from datetime import datetime
-
 import sqlalchemy
 from sqlalchemy import orm
 from sqlalchemy_serializer import SerializerMixin
@@ -9,6 +7,7 @@ from .db_session import SqlAlchemyBase
 
 
 class Folder(SqlAlchemyBase, SerializerMixin):
+    """ Модель Folder - папки """
     __tablename__ = 'folder'
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, unique=True, nullable=False)

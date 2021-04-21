@@ -6,6 +6,10 @@ from data.folders_argparser import parser
 
 
 class FolderResource(Resource):
+    """
+    Ресурс Folder для одного объекта
+    Осуществляет получение и удаление папок
+    """
     def get(self, folder_id):
         abort_if_folder_not_found(folder_id)
         session = db_session.create_session()
@@ -23,6 +27,10 @@ class FolderResource(Resource):
 
 
 class FoldersListResource(Resource):
+    """
+       Ресурс Folder для списка объектов
+       Осуществляет получение и добавление папок
+       """
     def get(self):
         session = db_session.create_session()
         folders = session.query(Folder).all()
@@ -47,6 +55,7 @@ class FoldersListResource(Resource):
 
 
 def abort_if_folder_not_found(folder_id):
+    """ Вызывает abort(404), если происходит обращение к несуществующей папке"""
     session = db_session.create_session()
     folder = session.query(Folder).get(folder_id)
     if not folder:
