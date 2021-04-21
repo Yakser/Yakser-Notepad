@@ -6,6 +6,9 @@ from functions.datetime_ import current_date
 
 
 def update_last_change_date():
+    """
+    Обновляет последнюю дату изменения у пользователя
+    """
     session = db_session.create_session()
     user = session.query(User).get(current_user.id)
     user.modified_date = current_date()
