@@ -31,14 +31,18 @@ class FoldersListResource(Resource):
             in folders]})
 
     def post(self):
-        args = parser.parse_args()
-        session = db_session.create_session()
-        folder = Folder(
-            name=args['name'],
-            user_id=args['user_id']
-        )
-        session.add(folder)
-        session.commit()
+        try:
+
+            args = parser.parse_args()
+            session = db_session.create_session()
+            folder = Folder(
+                name=args['name'],
+                user_id=args['user_id']
+            )
+            session.add(folder)
+            session.commit()
+        except Exception:
+            return jsonify({'error': 'Incorrect data'})
         return jsonify({'success': 'OK', 'folder_id': folder.id})
 
 

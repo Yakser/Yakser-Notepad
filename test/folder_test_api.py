@@ -12,7 +12,7 @@ def test_get_one_folder_correct():
                  .json().keys())[0] == 'folder'
 
 
-def test_get_one_folder_wrong_id():
+def test_get_one_folder_nonexistent_id():
     """
         corr: {'message': 'Folder 999 not found'}
     """
@@ -50,9 +50,6 @@ def test_delete_nonexistent_folder():
 
 
 def test_add_folder_correct():
-    """
-    corr: {'error': 'Not found'}
-    """
     resp = post(f'{URL}/folders',
                 json={'name': 'TestName', 'user_id': '0'}).json()
 
@@ -61,14 +58,13 @@ def test_add_folder_correct():
     delete(f'{URL}/folders/{id_}')
 
 
-def test_add_folder_empty():
+def test_add_folder_wrong_or_empty_json():
     """
     corr: {'message': {'name': 'Missing required parameter in the JSON body or the post body or the query string'}}
 
     """
     resp = post(f'{URL}/folders').json()
-    assert resp['message'] == {'name': 'Missing required parameter in'
-                                       ' the JSON body or the post body or the query string'}
+    assert resp == {'error': 'Incorrect data'}
 
 #
 # test_folder_api

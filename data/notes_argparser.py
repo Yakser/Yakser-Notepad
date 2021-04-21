@@ -7,9 +7,10 @@ parser.add_argument('folder_id', required=True)
 parser.add_argument('tags', required=True)
 
 edit_parser = reqparse.RequestParser()
-edit_parser.add_argument('header', required=True)
-edit_parser.add_argument('text', required=True)
-edit_parser.add_argument('tags', required=True)
+edit_parser.add_argument('header', required=False)
+edit_parser.add_argument('text', required=False)
+edit_parser.add_argument('folder_id', required=False)
+edit_parser.add_argument('tags', required=False)
 
 
 # notes_argparser

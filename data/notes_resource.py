@@ -22,6 +22,7 @@ class NoteResource(Resource):
             note.header = args.get('header', note.header)
             note.text = args.get('text', note.text)
             note.tags = args.get('tags', note.tags)
+            note.folder_id = args.get('folder_id', note.folder_id)
             session.commit()
         except Exception:
             return jsonify({'error': 'incorrect data'})
@@ -33,7 +34,7 @@ class NoteResource(Resource):
         note = session.query(Note).get(note_id)
         session.delete(note)
         session.commit()
-        return jsonify({'success': 'OK'})
+        return jsonify({'success': 'OK', 'note_id': note.id})
 
 
 class NotesListResource(Resource):
@@ -45,18 +46,21 @@ class NotesListResource(Resource):
             in notes]})
 
     def post(self):
-        args = parser.parse_args()
-        session = db_session.create_session()
-        note = Note(
-            header=args['header'],
-            text=args['text'],
-            favorite=args['favorite'],
-            folder_id=args['folder_id'],
-            tags=args['tags'],
-        )
-        session.add(note)
-        session.commit()
-        return jsonify({'success': 'OK'})
+        try:
+
+            args = parser.parse_args()
+            session = db_session.create_session()
+            note = Note(
+                header=args['header'],
+                text=args['text'],
+                folder_id=args['folder_id'],
+                tags=args['tags'],
+            )
+            session.add(note)
+            session.commit()
+        except Exception:
+            return jsonify({'error': 'Incorrect data'})
+        return jsonify({'success': 'OK', 'note_id': note.id})
 
 
 def abort_if_note_not_found(note_id):
