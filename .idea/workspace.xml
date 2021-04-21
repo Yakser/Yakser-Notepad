@@ -4,10 +4,8 @@
     <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/__all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__all_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/db_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/email_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/email_engine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +247,7 @@
       <workItem from="1618671872900" duration="599000" />
       <workItem from="1618676350632" duration="8526000" />
       <workItem from="1618765782146" duration="1959000" />
-      <workItem from="1619007605130" duration="6693000" />
+      <workItem from="1619007605130" duration="7578000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1616528174532</created>
@@ -461,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619013264559</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Небольшой рефакторинг">
+      <created>1619014721586</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1619014721586</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +509,8 @@
     <MESSAGE value="RESTful API для Note - api для редактирования заметок, тестирование api" />
     <MESSAGE value="Добавил ТЗ и пояснительную записку" />
     <MESSAGE value="Тестирование api для редактирования и удаления заметок. Правки в api для папок" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тестирование api для редактирования и удаления заметок. Правки в api для папок" />
+    <MESSAGE value="Небольшой рефакторинг" />
+    <option name="LAST_COMMIT_MESSAGE" value="Небольшой рефакторинг" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Notepaddy$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1618600036635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

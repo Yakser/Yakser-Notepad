@@ -1,10 +1,13 @@
 def send_login_and_password(receiver_email, login, password):
+    """
+    Отправляет письмо с логином и паролем при регистрации пользователя
+    """
     import smtplib
     import ssl
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
 
-    port = 465  # для SSL подключения
+    port = 465
     app_password = "YakserNotepad1234"
     app_email = "yaksernotepad@gmail.com"
 
@@ -69,22 +72,25 @@ def send_login_and_password(receiver_email, login, password):
     """
 
     part = MIMEText(html, "html")
-    message.attach(part)
+    message.attach(part)  # прикрепление html страницы к письму
 
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-        server.login(app_email, app_password)
-        server.sendmail(app_email, receiver_email, message.as_string())
+        server.login(app_email, app_password)  # авторизация на smtp сервере
+        server.sendmail(app_email, receiver_email, message.as_string())  # отправка письма
 
 
 def send_account_deleted(receiver_email, login):
+    """
+        Отправляет письмо, уведомляющее об удалении аккаунта
+    """
     import smtplib
     import ssl
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
 
-    port = 465  # для SSL подключения
+    port = 465
     app_password = "YakserNotepad1234"
     app_email = "yaksernotepad@gmail.com"
 
@@ -148,13 +154,13 @@ def send_account_deleted(receiver_email, login):
     """
 
     part = MIMEText(html, "html")
-    message.attach(part)
+    message.attach(part)  # прикрепление html страницы к письму
 
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-        server.login(app_email, app_password)
-        server.sendmail(app_email, receiver_email, message.as_string())
+        server.login(app_email, app_password)  # авторизация на smtp сервере
+        server.sendmail(app_email, receiver_email, message.as_string())  # отправка письма
 
 
 def send_password_changed(receiver_email, login, new_password):
@@ -163,7 +169,7 @@ def send_password_changed(receiver_email, login, new_password):
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
 
-    port = 465  # для SSL подключения
+    port = 465
     app_password = "YakserNotepad1234"
     app_email = "yaksernotepad@gmail.com"
 
@@ -232,10 +238,9 @@ def send_password_changed(receiver_email, login, new_password):
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-        server.login(app_email, app_password)
-        server.sendmail(app_email, receiver_email, message.as_string())
-        print('sending')
+        server.login(app_email, app_password)  # авторизация на smtp сервере
+        server.sendmail(app_email, receiver_email, message.as_string())  # отправка письма
 
-# # email_engine
-# # # Created by Sergey Yaksanov at 27.03.2021
-# # Copyright © 2020 Yakser. All rights reserved.
+# email_engine
+# # Created by Sergey Yaksanov at 27.03.2021
+# Copyright © 2020 Yakser. All rights reserved.
