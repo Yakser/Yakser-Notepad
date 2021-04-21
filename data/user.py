@@ -1,5 +1,3 @@
-from datetime import datetime
-
 import sqlalchemy
 from flask_login import UserMixin
 from sqlalchemy import orm
@@ -11,6 +9,7 @@ from .db_session import SqlAlchemyBase
 
 
 class User(SqlAlchemyBase, UserMixin, SerializerMixin):
+    """ Модель User - пользователь """
     __tablename__ = 'user'
 
     id = sqlalchemy.Column(sqlalchemy.Integer,
@@ -31,9 +30,11 @@ class User(SqlAlchemyBase, UserMixin, SerializerMixin):
     folders = orm.relation("Folder", back_populates='user')
 
     def set_password(self, password):
+        """Хеширует и устанавливает пользователю пароль"""
         self.hashed_password = generate_password_hash(password)
 
     def check_password(self, password):
+        """Проверяет пароль на правильность"""
         return check_password_hash(self.hashed_password, password)
 
     def __repr__(self):

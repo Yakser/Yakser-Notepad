@@ -6,6 +6,10 @@ from data.notes_argparser import parser, edit_parser
 
 
 class NoteResource(Resource):
+    """
+        Ресурс Note для одного объекта
+        Осуществляет получение, изменение и удаление заметок
+    """
     def get(self, note_id):
         abort_if_note_not_found(note_id)
         session = db_session.create_session()
@@ -38,6 +42,10 @@ class NoteResource(Resource):
 
 
 class NotesListResource(Resource):
+    """
+           Ресурс Note для списка объектов
+           Осуществляет получение и добавление заметок
+    """
     def get(self):
         session = db_session.create_session()
         notes = session.query(Note).all()
@@ -64,6 +72,7 @@ class NotesListResource(Resource):
 
 
 def abort_if_note_not_found(note_id):
+    """ Вызывает abort(404), если происходит обращение к несуществующей заметке"""
     session = db_session.create_session()
     note = session.query(Note).get(note_id)
     if not note:

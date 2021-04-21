@@ -30,7 +30,7 @@ class FoldersListResource(Resource):
     """
        Ресурс Folder для списка объектов
        Осуществляет получение и добавление папок
-       """
+    """
     def get(self):
         session = db_session.create_session()
         folders = session.query(Folder).all()

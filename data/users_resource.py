@@ -8,6 +8,10 @@ from data.users_argparser import parser, edit_parser
 
 
 class UserResource(Resource):
+    """
+        Ресурс User для одного объекта
+        Осуществляет получение, изменение и удаление пользователей
+    """
     def get(self, user_id):
         abort_if_user_not_found(user_id)
         session = db_session.create_session()
@@ -44,6 +48,10 @@ class UserResource(Resource):
 
 
 class UsersListResource(Resource):
+    """
+        Ресурс Note для списка объектов
+        Осуществляет получение и добавление пользователей
+    """
     def get(self):
         session = db_session.create_session()
         users = session.query(User).all()
@@ -76,6 +84,7 @@ class UsersListResource(Resource):
 
 
 def abort_if_user_not_found(user_id):
+    """ Вызывает abort(404), если происходит обращение к несуществующему пользователю"""
     session = db_session.create_session()
     user = session.query(User).get(user_id)
     if not user:

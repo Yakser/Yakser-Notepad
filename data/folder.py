@@ -7,7 +7,7 @@ from .db_session import SqlAlchemyBase
 
 
 class Folder(SqlAlchemyBase, SerializerMixin):
-    """ Модель Folder - папки """
+    """ Модель Folder - папка """
     __tablename__ = 'folder'
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, unique=True, nullable=False)

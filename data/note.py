@@ -1,5 +1,3 @@
-from datetime import datetime
-
 import sqlalchemy
 from sqlalchemy import orm
 from sqlalchemy_serializer import SerializerMixin
@@ -9,6 +7,7 @@ from .db_session import SqlAlchemyBase
 
 
 class Note(SqlAlchemyBase, SerializerMixin):
+    """ Модель Note - заметка """
     __tablename__ = 'note'
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, unique=True, nullable=False)
     header = sqlalchemy.Column(sqlalchemy.String, nullable=False)
