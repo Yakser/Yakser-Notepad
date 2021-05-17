@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/img/filter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/img_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/__all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__all_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/db_session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/email_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/email_engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/folder.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/folder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/folders_argparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/folders_argparser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/folders_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/folders_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/momentjs.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/momentjs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/note.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/note.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/notes_argparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes_argparser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/notes_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users_argparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/users_argparser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/users_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/notepad.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/notepad.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/folders.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/folders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/folder_test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/folder_test_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/note_test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/note_test_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/user_test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/user_test_api.py" afterDir="false" />
-    </list>
+    <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,12 +188,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.Notepaddy" />
-      <item itemvalue="Flask server.Flask (run.py)" />
       <item itemvalue="Python.email_engine" />
-      <item itemvalue="Python.user_test_api" />
       <item itemvalue="Python.folder_test_api" />
       <item itemvalue="Python.note_test_api" />
+      <item itemvalue="Python.user_test_api" />
+      <item itemvalue="Flask server.Flask (run.py)" />
+      <item itemvalue="Flask server.Notepaddy" />
     </list>
     <recent_temporary>
       <list>
@@ -276,7 +248,7 @@
       <workItem from="1620021811000" duration="1389000" />
       <workItem from="1620071386794" duration="247000" />
       <workItem from="1620640879565" duration="51000" />
-      <workItem from="1621256555276" duration="5585000" />
+      <workItem from="1621256555276" duration="5908000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1616528174532</created>
@@ -530,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619019928645</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Обновление README.md и анонимизация">
+      <created>1621262465072</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1621262465072</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +533,6 @@
       <path value="$PROJECT_DIR$/.." />
       <path value="$PROJECT_DIR$/yakser-notepad" />
     </ignored-roots>
-    <MESSAGE value="First commit" />
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
     <MESSAGE value="Отправка письма с паролем и логином после регистрации" />
@@ -579,7 +557,8 @@
     <MESSAGE value="Добавление пояснений и комментариев - momentjs.py" />
     <MESSAGE value="Рефакторинг, добавление комментариев и описаний функций" />
     <MESSAGE value="Добавление комментариев в run.py + небольшие правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление комментариев в run.py + небольшие правки" />
+    <MESSAGE value="Обновление README.md и анонимизация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновление README.md и анонимизация" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Notepaddy$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1618600036635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
