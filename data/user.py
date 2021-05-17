@@ -39,7 +39,3 @@ class User(SqlAlchemyBase, UserMixin, SerializerMixin):
 
     def __repr__(self):
         return f"<User> {self.id} {self.surname} {self.name}"
-
-# users
-# # Created by Sergey Yaksanov at 01.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

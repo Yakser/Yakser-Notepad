@@ -52,6 +52,3 @@ def test_edit_note_correct():
                                      'text': 'TestText', 'folder_id': '0', 'tags': ''}).json()['note_id']
     assert put(f'{URL}/notes/{id_}', json={'header': "EditedTestHeader"}).json() == {'success': "OK"}
     delete(f'{URL}/notes/{id_}')
-# note_test_api
-# # Created by Sergey Yaksanov at 25.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

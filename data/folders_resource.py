@@ -10,6 +10,7 @@ class FolderResource(Resource):
     Ресурс Folder для одного объекта
     Осуществляет получение и удаление папок
     """
+
     def get(self, folder_id):
         abort_if_folder_not_found(folder_id)
         session = db_session.create_session()
@@ -31,6 +32,7 @@ class FoldersListResource(Resource):
        Ресурс Folder для списка объектов
        Осуществляет получение и добавление папок
     """
+
     def get(self):
         session = db_session.create_session()
         folders = session.query(Folder).all()
@@ -60,7 +62,3 @@ def abort_if_folder_not_found(folder_id):
     folder = session.query(Folder).get(folder_id)
     if not folder:
         abort(404, message=f"Folder {folder_id} not found")
-
-# folder_resource
-# # Created by Sergey Yaksanov at 25.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

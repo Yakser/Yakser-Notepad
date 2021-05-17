@@ -65,8 +65,3 @@ def test_add_folder_wrong_or_empty_json():
     """
     resp = post(f'{URL}/folders').json()
     assert resp == {'error': 'Incorrect data'}
-
-#
-# test_folder_api
-# # Created by Sergey Yaksanov at 25.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

@@ -240,7 +240,3 @@ def send_password_changed(receiver_email, login, new_password):
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
         server.login(app_email, app_password)  # авторизация на smtp сервере
         server.sendmail(app_email, receiver_email, message.as_string())  # отправка письма
-
-# email_engine
-# # Created by Sergey Yaksanov at 27.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

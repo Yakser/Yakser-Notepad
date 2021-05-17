@@ -35,7 +35,3 @@ def create_session() -> Session:
     """Осуществляет получение сессии подключения к базе данных."""
     global __factory
     return __factory()
-
-# db_session
-# # Created by Sergey Yaksanov at 01.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

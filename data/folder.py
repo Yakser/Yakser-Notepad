@@ -23,6 +23,3 @@ class Folder(SqlAlchemyBase, SerializerMixin):
 
     def __repr__(self):
         return "<Folder %r>" % self.id
-# folder
-# # Created by Sergey Yaksanov at 24.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

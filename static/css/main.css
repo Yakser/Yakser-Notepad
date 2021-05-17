@@ -90,7 +90,7 @@ nav {
     list-style-type: none;
     background: #fff;
     border-radius: 5px;
-    bottom: 75px;
+    bottom: 100px;
     right: 5px;
     opacity: 0;
     transition: .2s ease-in;
@@ -828,7 +828,7 @@ nav {
 }
 
 .manage-block:hover {
-    transform: scale(1.05) !important;
+    /*transform: scale(1.05) !important;*/
     cursor: pointer;
 }
 
@@ -1395,33 +1395,6 @@ form textarea::placeholder {
     }
     40% {
         transform: scale(1);
-    }
-}
-
-@keyframes titleAnimation {
-    0% {
-        transform: translateY(-25px) scale(.1);
-        opacity: 0;
-        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-    }
-    20% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    }
-    80% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    }
-    100% {
-        transform: translateY(25px) scale(.1);
-        opacity: 0;
-        -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
-        clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
     }
 }
 

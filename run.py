@@ -63,6 +63,12 @@ def home():
     return render_template('home.html', folders=folders_, user=current_user)
 
 
+@app.route('/set_search_by_tags', methods=['POST', 'GET'])
+@login_required
+def set_search_by_tags():
+    pass
+
+
 @app.route('/<folder_id>', methods=['POST', 'GET'])
 @app.route('/folders/<folder_id>', methods=['POST', 'GET'])
 @login_required

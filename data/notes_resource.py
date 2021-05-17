@@ -10,6 +10,7 @@ class NoteResource(Resource):
         Ресурс Note для одного объекта
         Осуществляет получение, изменение и удаление заметок
     """
+
     def get(self, note_id):
         abort_if_note_not_found(note_id)
         session = db_session.create_session()
@@ -46,6 +47,7 @@ class NotesListResource(Resource):
            Ресурс Note для списка объектов
            Осуществляет получение и добавление заметок
     """
+
     def get(self):
         session = db_session.create_session()
         notes = session.query(Note).all()
@@ -77,7 +79,3 @@ def abort_if_note_not_found(note_id):
     note = session.query(Note).get(note_id)
     if not note:
         abort(404, message=f"Note {note_id} not found")
-
-# note_resource
-# # Created by Sergey Yaksanov at 24.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

@@ -32,7 +32,3 @@ class momentjs(object):
     def fromNow(self):
         """Форматирует дату с помощью js-функции библиотеки MomentJs  - fromNow()"""
         return self.render("fromNow()")
-
-# momentjs
-# # Created by Sergey Yaksanov at 28.02.2021
-# Copyright © 2020 Yakser. All rights reserved.

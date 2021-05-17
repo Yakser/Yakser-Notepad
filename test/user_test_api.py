@@ -138,6 +138,3 @@ def test_edit_user_correct():
     }).json()['user_id']
     assert put(f'{URL}/users/{id_}', json={'name': 'EditedTestName'}).json() == {'success': 'OK'}
     delete(f'{URL}/users/{id_}').json()
-# user_test_api
-# # Created by Sergey Yaksanov at 24.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

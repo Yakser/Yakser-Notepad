@@ -20,7 +20,3 @@ class Note(SqlAlchemyBase, SerializerMixin):
 
     def __repr__(self):
         return "<Note %r>" % self.id
-
-# note
-# # Created by Sergey Yaksanov at 24.03.2021
-# Copyright © 2020 Yakser. All rights reserved.

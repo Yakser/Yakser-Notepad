@@ -5,7 +5,3 @@ from . import user
 from . import note
 from . import folder
 #   Импорт моделей для БД
-
-# __all_models
-# # Created by Sergey Yaksanov at 01.03.2021
-# Copyright © 2020 Yakser. All rights reserved.
