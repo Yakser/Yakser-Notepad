@@ -16,7 +16,7 @@ _текстовые заметки_.
 
 >Также проект размещен на Heroku:
 
-    https://yakser-notepad-alice-skill.herokuapp.com/
+    https://yakser-notepad.herokuapp.com/
 
 #### Как использовать?
 
