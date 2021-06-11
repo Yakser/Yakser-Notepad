@@ -1720,6 +1720,45 @@ form textarea::placeholder {
   .folders li a span {
     width: 50px;
   }
+  .head .text-logo {
+    font-size: 0;
+    margin: 0;
+  }
+  .menu li a span {
+    font-size: 0;
+  }
+  .menu .hovered {
+    width: 0px;
+  }
+  .menu li a {
+    width: auto;
+  }
+  .menu li a img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  .menu li a:hover img:not(.right-arrow) {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-filter: none;
+            filter: none;
+  }
+  .menu .right-arrow {
+    margin: 0;
+    width: 20px;
+  }
+  .stats {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stat-block {
+    margin-bottom: 15px;
+    width: 200px;
+  }
+  .last_change span {
+    display: inline-block;
+    margin-top: 5px;
+  }
 }
 
 /* 
