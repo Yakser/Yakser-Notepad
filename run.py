@@ -66,6 +66,7 @@ def home():
 @app.route('/set_search_by_tags', methods=['POST', 'GET'])
 @login_required
 def set_search_by_tags():
+    # TODO поиск по тегам
     pass
 
 
@@ -340,13 +341,17 @@ def delete_profile():
     """
         Осуществляет удаление аккаунта и перенаправляет на главную страницу
     """
-    session = db_session.create_session()
-    user = session.query(User).get(current_user.id)
-    session.delete(user)
+    try:
+        session = db_session.create_session()
+        user = session.query(User).get(current_user.id)
+        session.delete(user)
 
-    send_account_deleted(user.email, user.login)
-    session.commit()
-    return redirect('/')
+        send_account_deleted(user.email, user.login)
+        session.commit()
+        return redirect('/')
+    except Exception:
+        # TODO возвращение страницы с ошибкой
+        return redirect('/')
 
 
 @app.route('/change_password', methods=['POST', 'GET'])
