@@ -1663,6 +1663,65 @@ form textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .block {
+    width: 65%;
+  }
+  .block .content {
+    margin-left: 0;
+  }
+  .about-block {
+    width: 400px;
+  }
+  .about-block img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .path-hint a {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .about-block {
+    width: 350px;
+  }
+  .about-block img {
+    width: 350px;
+  }
+  .folders .folder {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .path-hint {
+    margin-left: 15px;
+  }
+  .block-menu {
+    margin-left: 0;
+  }
+  .block {
+    width: 60%;
+  }
+  .block-header h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  .block-header h1 span {
+    font-size: 30px;
+  }
+  .folders li a img {
+    width: 50px;
+  }
+  .folders li a span {
+    width: 50px;
+  }
+}
+
 /* 
 @media screen and (max-width: 1281px) {
     .block {

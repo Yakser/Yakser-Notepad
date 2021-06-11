@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/.sass-cache/cfe59ea1fb1a0499b9121b8b855ff87179bb2a9e/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/notepad.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/notepad.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,7 @@
       <recent name="C:\Python1\Python37\Projects\Notepaddy\app\db" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.note_test_api">
+  <component name="RunManager" selected="Flask server.Flask (run.py)">
     <configuration name="email_engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Notepaddy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,10 +207,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (run.py)" />
         <item itemvalue="Python.note_test_api" />
         <item itemvalue="Python.folder_test_api" />
         <item itemvalue="Python.user_test_api" />
-        <item itemvalue="Flask server.Flask (run.py)" />
         <item itemvalue="Python.email_engine" />
       </list>
     </recent_temporary>
@@ -267,7 +265,7 @@
       <workItem from="1623302651429" duration="4334000" />
       <workItem from="1623353579293" duration="1804000" />
       <workItem from="1623400340723" duration="11053000" />
-      <workItem from="1623439121962" duration="767000" />
+      <workItem from="1623439121962" duration="4499000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1616528174532</created>
@@ -556,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621264544881</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Добавление компиляции scss в css. Теперь сайт адаптирован для ноутбуков (размер экрана ~1024px)">
+      <created>1623440208231</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1623440208231</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +586,6 @@
       <path value="$PROJECT_DIR$/yakser-notepad" />
       <path value="$PROJECT_DIR$/static/css/Dracula Color Scheme" />
     </ignored-roots>
-    <MESSAGE value="test2" />
     <MESSAGE value="Отправка письма с паролем и логином после регистрации" />
     <MESSAGE value="Отправка письма с паролем после смены пароля" />
     <MESSAGE value="requirements.txt" />
@@ -606,11 +610,12 @@
     <MESSAGE value="Добавление комментариев в run.py + небольшие правки" />
     <MESSAGE value="Обновление README.md и анонимизация" />
     <MESSAGE value="Правка README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правка README.md" />
+    <MESSAGE value="Добавление компиляции scss в css. Теперь сайт адаптирован для ноутбуков (размер экрана ~1024px)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление компиляции scss в css. Теперь сайт адаптирован для ноутбуков (размер экрана ~1024px)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Notepaddy$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1618600036635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Notepaddy$user_test_api.coverage" NAME="user_test_api Coverage Results" MODIFIED="1618933959571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Notepaddy$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1623444134154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Notepaddy$note_test_api.coverage" NAME="note_test_api Coverage Results" MODIFIED="1619012366244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Notepaddy$funcs.coverage" NAME="funcs Coverage Results" MODIFIED="1616701959510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/Notepaddy$run.coverage" NAME="run Coverage Results" MODIFIED="1616572422036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

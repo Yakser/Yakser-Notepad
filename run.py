@@ -1,3 +1,4 @@
+from waitress import serve
 from flask import Flask
 from flask import make_response, jsonify
 from flask import render_template, url_for, request, redirect, flash
@@ -401,7 +402,7 @@ def unauthorized(error):
 
 
 def main():
-    app.run()
+    serve(app.run())
 
 
 # __name__ = run
