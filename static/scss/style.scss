@@ -1,11 +1,9 @@
 /* COLORS
-
 light blue 365fe5
 blue 2841a3
 dark 242e42
 gray f2f3f4
 white ffffff
-
 */
 * {
     margin: 0;
@@ -390,6 +388,10 @@ form textarea::placeholder {
 .block-menu {
     padding: 15px 15px 15px;
     margin-left: 60px;
+    .error-msg  {
+        color: white;
+        font-size: 24px;
+    }
 }
 
 .folders {
@@ -864,6 +866,7 @@ form textarea::placeholder {
 .manage-block span {
     font-size: 18px;
     align-self: center;
+    margin-left: 15px;
 }
 
 .login-form button {
@@ -1159,6 +1162,7 @@ form textarea::placeholder {
     opacity: 1;
 }
 
+
 /* ANIMATIONS */
 
 @keyframes fade-in {
@@ -1264,8 +1268,9 @@ form textarea::placeholder {
             font-size: 22px;
         }
     }
-    h1 {
+    .block-header h1 {
         font-size: 24px;
+        margin: 0;
     }
     .about-block {
         width: 350px;
@@ -1294,10 +1299,7 @@ form textarea::placeholder {
     }
     .block-header {
         h1 {
-            font-size: 28px;
-            span {
-                font-size: 30px;
-            }
+        
             margin: 0;
         }
     }

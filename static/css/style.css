@@ -1,11 +1,9 @@
 /* COLORS
-
 light blue 365fe5
 blue 2841a3
 dark 242e42
 gray f2f3f4
 white ffffff
-
 */
 * {
   margin: 0;
@@ -506,6 +504,11 @@ form textarea::placeholder {
 .block-menu {
   padding: 15px 15px 15px;
   margin-left: 60px;
+}
+
+.block-menu .error-msg {
+  color: white;
+  font-size: 24px;
 }
 
 .folders {
@@ -1146,6 +1149,7 @@ form textarea::placeholder {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-left: 15px;
 }
 
 .login-form button {
@@ -1682,8 +1686,9 @@ form textarea::placeholder {
   .path-hint a {
     font-size: 22px;
   }
-  h1 {
+  .block-header h1 {
     font-size: 24px;
+    margin: 0;
   }
   .about-block {
     width: 350px;
@@ -1708,11 +1713,7 @@ form textarea::placeholder {
     width: 60%;
   }
   .block-header h1 {
-    font-size: 28px;
     margin: 0;
-  }
-  .block-header h1 span {
-    font-size: 30px;
   }
   .folders li a img {
     width: 50px;

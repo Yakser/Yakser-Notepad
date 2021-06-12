@@ -391,8 +391,14 @@ def about():
     return render_template('about.html', user=current_user)
 
 
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template("unknown_error.html", user=current_user)
+
+
 @app.errorhandler(404)
 def not_found(error):
+    # return render_template("404_error.html", user=current_user)
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
