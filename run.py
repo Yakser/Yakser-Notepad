@@ -408,7 +408,7 @@ def unauthorized(error):
 
 
 def main():
-    serve(app)
+    app.run()
 
 
 # __name__ = run
