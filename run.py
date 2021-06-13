@@ -408,7 +408,7 @@ def unauthorized(error):
 
 
 def main():
-    serve(app, host="localhost", port=5000, threads=6)
+    serve(app)
 
 
 # __name__ = run

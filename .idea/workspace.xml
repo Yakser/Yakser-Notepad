@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/scss/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/notepad.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/notepad.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/.sass-cache/cfe59ea1fb1a0499b9121b8b855ff87179bb2a9e/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/.sass-cache/cfe59ea1fb1a0499b9121b8b855ff87179bb2a9e/style.scssc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Yakser-Notepad" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,7 +36,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -62,8 +60,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Python38/python.exe" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/Python38/python.exe" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -77,7 +75,7 @@
       <recent name="C:\Python1\Python37\Projects\Notepaddy\app\db" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Flask server.Flask (run.py)">
     <configuration name="email_engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Notepaddy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,27 +142,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Notepaddy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="user_test_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Notepaddy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,6 +164,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Flask (run.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="Notepaddy" />
+      <option name="target" value="$PROJECT_DIR$/run.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Notepaddy" type="Python.FlaskServer">
       <module name="Notepaddy" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -203,15 +195,16 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Flask server.Notepaddy" />
+      <item itemvalue="Flask server.Flask (run.py)" />
       <item itemvalue="Python.email_engine" />
-      <item itemvalue="Python.user_test_api" />
       <item itemvalue="Python.folder_test_api" />
       <item itemvalue="Python.note_test_api" />
-      <item itemvalue="Python.run" />
+      <item itemvalue="Python.user_test_api" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run" />
+        <item itemvalue="Flask server.Flask (run.py)" />
         <item itemvalue="Python.note_test_api" />
         <item itemvalue="Python.folder_test_api" />
         <item itemvalue="Python.user_test_api" />
@@ -219,22 +212,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="" />
@@ -285,6 +263,7 @@
       <workItem from="1623353579293" duration="1804000" />
       <workItem from="1623400340723" duration="11053000" />
       <workItem from="1623439121962" duration="5222000" />
+      <workItem from="1623613952382" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1616528174532</created>
@@ -587,14 +566,7 @@
       <option name="project" value="LOCAL" />
       <updated>1623446403278</updated>
     </task>
-    <task id="LOCAL-00044" summary="Обработчик внутренних ошибок сервера">
-      <created>1623502323569</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1623502323569</updated>
-    </task>
-    <option name="localTasksCounter" value="45" />
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,13 +577,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -620,6 +591,7 @@
       <path value="$PROJECT_DIR$/yakser-notepad" />
       <path value="$PROJECT_DIR$/static/css/Dracula Color Scheme" />
     </ignored-roots>
+    <MESSAGE value="Отправка письма с паролем после смены пароля" />
     <MESSAGE value="requirements.txt" />
     <MESSAGE value="add favicon" />
     <MESSAGE value="edit Procfile" />
@@ -644,45 +616,18 @@
     <MESSAGE value="Правка README.md" />
     <MESSAGE value="Добавление компиляции scss в css. Теперь сайт адаптирован для ноутбуков (размер экрана ~1024px)" />
     <MESSAGE value=" Теперь сайт адаптирован для планшетов (размер экрана ~620px-784px)" />
-    <MESSAGE value="Обработчик внутренних ошибок сервера" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обработчик внутренних ошибок сервера" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Теперь сайт адаптирован для планшетов (размер экрана ~620px-784px)" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="220" y="0" key="CommitChangelistDialog2" timestamp="1623502320016">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="220" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1623502320016" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1623482289033">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1623482289033" />
-    <state width="1344" height="336" key="GridCell.Tab.0.bottom" timestamp="1623580295618">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1344" height="336" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1623580295618" />
-    <state width="1344" height="336" key="GridCell.Tab.0.center" timestamp="1623580295618">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1344" height="336" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1623580295618" />
-    <state width="1344" height="336" key="GridCell.Tab.0.left" timestamp="1623580295617">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1344" height="336" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1623580295617" />
-    <state width="1344" height="336" key="GridCell.Tab.0.right" timestamp="1623580295618">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1344" height="336" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1623580295618" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1623482322069">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1623482322069" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1623502329098">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1623502329098" />
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1623580232106">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1623580232106" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Notepaddy$user_test_api.coverage" NAME="user_test_api Coverage Results" MODIFIED="1618933959571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Notepaddy$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1623446484523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Notepaddy$note_test_api.coverage" NAME="note_test_api Coverage Results" MODIFIED="1619012366244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Notepaddy$funcs.coverage" NAME="funcs Coverage Results" MODIFIED="1616701959510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/Notepaddy$run.coverage" NAME="run Coverage Results" MODIFIED="1616572422036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Notepaddy$user_test_api__1_.coverage" NAME="user_test_api (1) Coverage Results" MODIFIED="1616570754073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
+    <SUITE FILE_PATH="coverage/Notepaddy$test_folder_api.coverage" NAME="test_folder_api Coverage Results" MODIFIED="1616650290575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Notepaddy$folder_test_api.coverage" NAME="folder_test_api Coverage Results" MODIFIED="1619009765438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Notepaddy$email_engine.coverage" NAME="email_engine Coverage Results" MODIFIED="1616828523206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/Notepaddy$user_test_api__2_.coverage" NAME="user_test_api (2) Coverage Results" MODIFIED="1616649406433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
 </project>
