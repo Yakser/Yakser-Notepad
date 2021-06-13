@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d055a2-3708-489a-85a9-a3e6227c02d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/404_error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/unknown_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Notepaddy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Notepaddy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/notepad.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/notepad.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/style.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +37,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -83,7 +77,7 @@
       <recent name="C:\Python1\Python37\Projects\Notepaddy\app\db" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.note_test_api">
+  <component name="RunManager" selected="Python.run">
     <configuration name="email_engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Notepaddy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -593,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623446403278</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Обработчик внутренних ошибок сервера">
+      <created>1623502323569</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1623502323569</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +620,6 @@
       <path value="$PROJECT_DIR$/yakser-notepad" />
       <path value="$PROJECT_DIR$/static/css/Dracula Color Scheme" />
     </ignored-roots>
-    <MESSAGE value="Отправка письма с паролем после смены пароля" />
     <MESSAGE value="requirements.txt" />
     <MESSAGE value="add favicon" />
     <MESSAGE value="edit Procfile" />
@@ -644,36 +644,45 @@
     <MESSAGE value="Правка README.md" />
     <MESSAGE value="Добавление компиляции scss в css. Теперь сайт адаптирован для ноутбуков (размер экрана ~1024px)" />
     <MESSAGE value=" Теперь сайт адаптирован для планшетов (размер экрана ~620px-784px)" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Теперь сайт адаптирован для планшетов (размер экрана ~620px-784px)" />
+    <MESSAGE value="Обработчик внутренних ошибок сервера" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обработчик внутренних ошибок сервера" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="220" y="0" key="CommitChangelistDialog2" timestamp="1623502320016">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="220" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1623502320016" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1623482289033">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1623482289033" />
-    <state width="1344" height="207" key="GridCell.Tab.0.bottom" timestamp="1623502258050">
+    <state width="1344" height="336" key="GridCell.Tab.0.bottom" timestamp="1623580295618">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1344" height="207" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1623502258050" />
-    <state width="1344" height="207" key="GridCell.Tab.0.center" timestamp="1623502258050">
+    <state width="1344" height="336" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1623580295618" />
+    <state width="1344" height="336" key="GridCell.Tab.0.center" timestamp="1623580295618">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1344" height="207" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1623502258050" />
-    <state width="1344" height="207" key="GridCell.Tab.0.left" timestamp="1623502258050">
+    <state width="1344" height="336" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1623580295618" />
+    <state width="1344" height="336" key="GridCell.Tab.0.left" timestamp="1623580295617">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1344" height="207" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1623502258050" />
-    <state width="1344" height="207" key="GridCell.Tab.0.right" timestamp="1623502258050">
+    <state width="1344" height="336" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1623580295617" />
+    <state width="1344" height="336" key="GridCell.Tab.0.right" timestamp="1623580295618">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1344" height="207" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1623502258050" />
+    <state width="1344" height="336" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1623580295618" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1623482322069">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1623482322069" />
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1623482895450">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1623502329098">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1623482895450" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1623502329098" />
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1623580232106">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1623580232106" />
   </component>
 </project>

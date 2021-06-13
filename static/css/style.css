@@ -1762,6 +1762,17 @@ form textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .folders {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .folders li {
+    margin: 0;
+  }
+}
+
 /* 
 @media screen and (max-width: 1281px) {
     .block {
